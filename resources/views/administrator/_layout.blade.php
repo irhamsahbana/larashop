@@ -33,7 +33,7 @@
     
 
     <!-- SLEEK CSS -->
-    <link id="sleek-css" rel="stylesheet" href="{{ URL::asset('administrator/assets/css/sleek.css') }}" />
+    <link rel="stylesheet" href="{{ asset('administrator/assets/css/sleek.css') }}" />
   
     <!-- FAVICON -->
     <link href="{{ asset('administrator/assets/img/favicon.png') }}" rel="shortcut icon" />
@@ -152,8 +152,14 @@
     
 
     <script src="{{ asset('administrator') }}/assets/js/sleek.js"></script>
-  <link href="{{ asset('administrator') }}/assets/options/optionswitch.css" rel="stylesheet">
-<script src="{{ asset('administrator') }}/assets/options/optionswitcher.js"></script>
+    <script>
+      $(".delete").on("submit", function () {
+        return confirm("Do you want to remove this?");
+      });
+    </script>
+    <link href="{{ asset('administrator') }}/assets/options/optionswitch.css" rel="stylesheet">
+    <script src="{{ asset('administrator') }}/assets/options/optionswitcher.js"></script>
+
 </body>
 </html>
 
