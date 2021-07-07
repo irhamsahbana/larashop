@@ -19,7 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::prefix('administrator')->group(function () {
+Route::prefix('administrator')->middleware('auth')->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
     Route::resource('categories', CategoryController::class);
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
