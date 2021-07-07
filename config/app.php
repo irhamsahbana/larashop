@@ -174,6 +174,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        App\Providers\GeneralServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
     ],
@@ -209,6 +210,7 @@ return [
         'File' => Illuminate\Support\Facades\File::class,
         'Form' => Collective\Html\FormFacade::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
+        'General' => App\Helpers\General::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Http' => Illuminate\Support\Facades\Http::class,
