@@ -1,0 +1,15 @@
+#Tutorial 2
+    delete attr "id=sleek-css"
+#Tutorial 5
+    npm install && npm run dev
+    npm install --save-dev cross-env
+
+    php artisan db:seed
+    
+    You may execute the db:seed Artisan command to seed your database.
+    By default, the db:seed command runs the Database\Seeders\DatabaseSeeder class,
+    which may in turn invoke other seed classes. However, you may use the --class option
+    to specify a specific seeder class to run individually:
+        php artisan db:seed --class=UserSeeder
+
+
